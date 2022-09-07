@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Утябаев А.А.</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).mousemove(function(pos) {
+                $("#p1").html("X:" + pos.pageX + "<br>Y:" + pos.pageY);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <p id="p1"></p>
+    </div>
+</body>
+</html>

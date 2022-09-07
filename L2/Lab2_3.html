@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".left").click(function() {
+                $("#img").animate({left: "-=100px"}, "fast");
+            });
+            $(".right").click(function() {
+                $("#img").animate({left: "+=100px"}, "fast");
+            });
+            $(".up").click(function() {
+                $("#img").animate({top: "-=100px"}, "fast");
+            });
+            $(".down").click(function() {
+                $("#img").animate({top: "+=100px"}, "fast");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div >
+        <img id="img" style="position:absolute;" src="https://traveltimes.ru/wp-content/uploads/2021/12/peru.jpg" alt="peru" height="400" >
+    </div>
+
+    <div class="control" style="position:absolute; text-align:center; margin:30% 40%">
+        <button class="up">Вверх</button>
+        <button class="down">Вниз</button>
+        <button class="left">Влево</button>
+        <button class="right">Вправо</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Утябаев А.А.</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function() {
+            $("#btn-erase").click(function() { $("#input").val($("#input").val().substring(0, $("#input").val().length - 1)); });
+
+            $("#btn-1").click(function() { $("#input").val($("#input").val() + "1"); });
+            $("#btn-2").click(function() { $("#input").val($("#input").val() + "2"); });
+            $("#btn-3").click(function() { $("#input").val($("#input").val() + "3"); });
+            $("#btn-4").click(function() { $("#input").val($("#input").val() + "4"); });
+            $("#btn-5").click(function() { $("#input").val($("#input").val() + "5"); });
+            $("#btn-6").click(function() { $("#input").val($("#input").val() + "6"); });
+            $("#btn-7").click(function() { $("#input").val($("#input").val() + "7"); });
+            $("#btn-8").click(function() { $("#input").val($("#input").val() + "8"); });
+            $("#btn-9").click(function() { $("#input").val($("#input").val() + "9"); });
+            $("#btn-0").click(function() { $("#input").val($("#input").val() + "0"); });
+
+            $("#btn-plus").click(function() { $("#input").val($("#input").val() + "+"); });
+            $("#btn-minus").click(function() { $("#input").val($("#input").val() + "-"); });
+            $("#btn-mult").click(function() { $("#input").val($("#input").val() + "*"); });
+            $("#btn-div").click(function() { $("#input").val($("#input").val() + "/"); });
+
+            $("#btn-dot").click(function() { $("#input").val($("#input").val() + "."); });
+
+            $("#btn-result").click(function() { $("#input").val(eval($("#input").val())) })
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="calc">
+            <input id="input" type="text" size="10" readonly><button id="btn-erase" type="button"></button><button id="btn-clear" type="reset">C</button><br>
+            <button id="btn-1" type="button">1</button><button id="btn-2" type="button">2</button><button id="btn-3" type="button">3</button><button id="btn-plus" type="button">+</button><br>
+            <button id="btn-4" type="button">4</button><button id="btn-5" type="button">5</button><button id="btn-6" type="button">6</button><button id="btn-minus" type="button">-</button><br>
+            <button id="btn-7" type="button">7</button><button id="btn-8" type="button">8</button><button id="btn-9" type="button">9</button><button id="btn-mult" type="button">*</button><br>
+            <button id="btn-0" style="width:50px" type="button">0</button><button id="btn-dot" type="button">.</button><button id="btn-div" type="button">/</button><br>
+            <button id="btn-result" style="width:90px" type="button">=</button>
+        </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Утябаев А.А.</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var q1 = 0, q2 = 0, q3 = 0, q4 = 0, votes = 0;
+
+            $("input[value=1]").click(function() {
+                q1 += 1;
+            });
+
+            $("input[value=2]").click(function() {
+                q2 += 1;
+            });
+
+            $("input[value=3]").click(function() {
+                q3 += 1;
+            });
+
+            $("input[value=4]").click(function() {
+                q4 += 1;
+            });
+
+            $("input").click(function() {
+                votes += 1;
+                $(".votes").html("Всего голосов: " + votes);
+            });
+
+            $("button").click(function() {
+                if(q1 + q2 + q3 + q4 > 0)
+                $(".result").html("1 - " + q1 / (q1 + q2 + q3 + q4) * 100 + "%<br>2 - " + q2 / (q1 + q2 + q3 + q4) * 100 + "%<br>3 - " + q3 / (q1 + q2 + q3 + q4) * 100 + "%<br>4 - " + q4 / (q1 + q2 + q3 + q4) * 100 + "%");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Oпрос</h1>
+        <h2>Вопрос</h2>
+
+        <form class="radio">
+            <p><input type="radio" value="1">Вариант ответа 1</p>
+            <p><input type="radio" value="2">Вариант ответа 2</p>
+            <p><input type="radio" value="3">Вариант ответа 3</p>
+            <p><input type="radio" value="4">Вариант ответа 4</p>
+            <p><button type="button">Результаты</button></p>
+        </form>
+
+        <p class="votes"></p>
+        <p class="result"></p>
+    </div>
+</body>
+</html>

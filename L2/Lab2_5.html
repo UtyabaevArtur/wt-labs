@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Утябаев А.А.</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var draggable = false;
+            var positionDownX;
+            var positionDownY;
+
+            $(".drag").mousedown(function(posDown) {
+                draggable = true;
+                positionDownX = posDown.pageX;
+                positionDownY = posDown.pageY;
+            });
+
+            $(document).mousemove(function(posMove) {
+                if(draggable) $(".drag").offset({left: posMove.pageX - positionDownX, top: posMove.pageY - positionDownY});
+            });
+
+            $(document).mouseup(function() {
+                draggable = false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div class="drag" style="width: 150px; height: 150px; background-color:rgb(0, 0, 0);"></div>
+    </div>
+</body>
+</html>

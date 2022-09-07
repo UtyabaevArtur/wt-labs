@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Утябаев А.А.</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".btnGo").click(function(){
+            var verified = true;
+            $("input.text").attr("style","background-color: FFFFFF");
+            if($("input#name").val().length<1) {
+                $("input#name").attr("style","background-color: FF0000");
+                verified = false;
+            }
+            if($("input#pass").val().length<4) {
+                $("input#pass").attr("style","background-color: FF0000");
+                verified = false;
+            }
+            if($("input#pass").val()!=$("input#passPass").val()) {
+                $("input#passPass").attr("style","background-color: FF0000");
+                verified = false;
+            }
+            if(!$("input#email").val().includes("@")||$("input#email").val()=="") {
+                $("input#email").attr("style","background-color: FF0000");
+                verified = false;
+            }
+            if($("input#message").val().length<10) {
+                $("input#message").attr("style","background-color: FF0000");
+                verified = false;
+            }
+            if(verified) {
+                alert("Отправлено");
+                $("input.text").attr("style","background-color: FFFFFF");
+            } else {
+                alert("Неверно введёные данные");
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <form method="post">
+    <br> Ваше имя* <input type="text" class="text" id="name" size="3" value=" ">
+    <br> Пароль* <input type="text" class="text" id="pass" size="3" value=" ">
+    <br> Подтвердите пароль* <input type="text" class="text" id="passPass" size="3" value=" ">
+    <br> Email* <input type="text" class="text" id="email" size="3" value=" ">
+    <br> Тема сообщения <input type="text" class="text" id="subject" size="3" value=" ">
+    <br> Сообщение* <input type="text" class="text" id="message" size="40" value=" ">
+    <br> <input type="button"  class="btnGo" value="Отправить">
+    <br> <input type="reset"  class="btnClear" value="Очистить">
+    </form>
+</body>
+</html>
