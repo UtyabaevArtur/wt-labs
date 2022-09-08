@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1.custom/jquery-ui.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+	<title>Вакансии</title>
+</head>
+<body>
+	<header class="head">
+    <div align="center" class="logo">
+        <a href=#><img src="https://cdn1.rabota.ru/sf/nuxt-public-rabota/img/logo-rabota-blue.e7814bd.svg" /></a>
+        <p>Работа.ру — сервис для поиска работы и сотрудников на российском рынке. Компания быстро растет и развивается, чтобы стать лидером российского hr-tech рынка.</p>
+    </div>
+	</header>
+<main class="main">
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Вакансии дня</a></li>
+		<li><a href="#tabs-2">Компании дня</a></li>
+		<li><a href="#tabs-3">Работа из дома</a></li>
+	</ul>
+
+	<div id="tabs-1">
+	    <h2><a href=# >Помощник руководителя</a></h2>
+		<h3>от 50 000 руб.</h3>
+		<p>ООО "Бизнес Перспектива", Уфа</p>
+		<hr>
+		<h2><a href=# >Продавец-консультант</a></h2>
+		<h3>37 400 — 45 100 руб.</h3>
+		<p>Розничная сеть МТС, Уфа</p>
+		<hr>
+		<h2><a href=# >Водитель-дальнобойщик</a></h2>
+		<h3>80 000 — 105 000 руб.</h3>
+		<p>КА "Работа.ру"</p>
+	</div>
+
+	<div id="tabs-2">
+		<h2><a href=# >Группа Актион</a></h2>
+		<h2><a href=# >Догма Голд</a></h2>
+		<h2><a href=# >Job Person</a></h2>
+		<h2><a href=# >ИТАКА</a></h2>
+		<h2><a href=# >ООО "АКСИОМА"</a></h2>
+	</div>
+
+	<div id="tabs-3">
+		<h2>Найдено 9 544 вакансии</h2>
+		<br>
+		<h3><a href=# >Менеджер по продажам (удалённо)</a></h3>
+		<h4>80 000 руб.</h4>
+		<p>ООО "АРТ-ЛОГИСТИК"</p>
+		<p>Москва</p>
+		<p>Отклик без резюме</p>
+		<p>Обработка входящих обращений по телефону;<br>
+			Консультирование клиентов по услугам компании;<br>
+			Ответы на вопросы клиентов, фиксация обращений;<br>
+			Оформление заявок.</p>
+		<hr>
+		<h3><a href=# >Разработчик PHP. Кодревьюер</a></h3>
+		<h4>60 000 — 100 000 руб.</h4>
+		<p>whatAsoft</p>
+		<p>Москва</p>
+		<p>Создание, поддержка и развитие интернет-магазинов на CMS Bitrix. Внедрение и настройка Битрикс24. Формализация и оптимизация бизнес-процессов.</p>
+		<hr>
+		<h3><a href=# >Senior Backend-разработчик C/Go</a></h3>
+		<h4>70 000 – 150 000 руб.</h4>
+		<p>Можно работать из дома</p>
+		<p>Rambler&Co</p>
+		<p>Мочква</p>
+		<p>Отклик без резюме</p>
+		<p>Мы ищем увлеченного backend-разработчика в продуктовую команду проекта Рамблер/почта. Масштабный проект, сложная архитектура и очень много данных. Развитие и профессиональный рост обеспечены.</p>
+		<hr>
+	</div>
+</div>
+<div align="center" class="logo">
+	<button id="open" ><h2>Подать резюме</h2></button>
+</div>
+
+<br>
+		<br>
+		<div id="dialog" class="dialog" title="Оформление заказа">
+		<form class="form-inline">
+		<div class="form-group">
+		<label >ФИО</label><br>
+		<input type="text" name="name" id="name">
+		<p>
+
+		<label for="weight">Укажите желаему зп:</label>
+		<input type="text" name="weight" id="weight">
+		<p>
+		<div id="slider"></div>
+		<p>
+
+		<label for="meat">Выберите способ работы:</label>
+		<input type="text" name="example" list="lst" id="meat">
+		<datalist id="lst">
+		<option value="Работа из дома">
+		<option value="Работа в офисе">
+		</datalist>
+		<p>
+
+		<label for="date">Выберите день: </label>
+		<input type="text" class="form-control" id="date">
+		<p>
+		<label for="town">Введите город:</label>
+		<input type="text" class="form-control" list="tow" id="town">
+		<datalist id="tow">
+		<option value="Уфа">
+		<option value="Москва">
+		<option value="СПБ">
+		</datalist>
+		<p>
+		
+		<label for="str">Опишите свои сильные стороны:</label>
+		<input type="text" id="str">
+		<p>
+		</div>
+		</form>
+		</div>
+	
+		</div>
+	</div>
+</main>
+	<div id="succ" class="succ" title="Уведомление" style="display: none;"><h2>Ваше резюме принято.</h2></div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body{
+	margin: 50px;
+}
+.head{
+	min-height: 60px;
+	padding: 10px 0;
+}
+#menu{
+	width: 150px;
+	display: block;
+	text-decoration: none;
+}
+
+.list-group-item{
+	cursor: move;
+} 
+.btn{
+	cursor: pointer;
+	height: 50px;
+	background-color: silver;
+	line-height: 50px;
+	border: 1px solid white;
+	padding: 0 1rem;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	text-align: center;
+}
+#header {
+	height: 200px;
+	margin-bottom: 15px;
+}
+#header button {
+			border: 0;
+			text-indent: -9999px;
+			font-size: 0;
+			width: 60px; height: 26px;
+			float: right;
+			background-color: transparent;
+		}
+#header button {
+			border: 0;
+			text-indent: -9999px;
+			font-size: 0;
+			width: 60px; height: 26px;
+			float: right;
+			background-color: transparent;
+		}
+	#header .pages {
+		list-style-type: none;
+		height: 39px;
+		padding-top: 3px;
+		float: center;
+	}
+		#header .pages li {
+			float: left;
+		}
+		#header .pages li a {
+			display: block;
+			font-size: 0.9em;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 12px 15px;
+			text-decoration: none;
+		}
+		#header .pages li a:hover {
+			text-decoration: underline;
+		}
+	#header form {
+		width: 245px; height: 26px;
+		float: right;
+		padding: 8px 30px 0 0;
+	}
+		#header form input {
+			border: 0;
+			float: left;
+			width: 170px;
+			margin: 5px;
+		}
+		#header form button {
+			border: 0;
+			text-indent: -9999px;
+			font-size: 0;
+			width: 60px; height: 26px;
+			float: right;
+			background-color: transparent;
+		}
+	#header .logo {
+		clear: both;
+		float: center;
+		padding: 30px 0 36px 20px;
+	}
+		#header .logo h1 {
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+			#header .logo h1 a {
+				text-decoration: none;
+			}
+		#header .logo p {
+			color: #888888;
+			font-weight: bold;
+			font-size: 1.2em;
+			text-transform: uppercase;
+		}
+			#header .logo button {
+			border: 0;
+			text-indent: -9999px;
+			font-size: 0;
+			width: 60px; height: 26px;
+			float: right;
+			background-color: transparent;
+		}
+	#header .sponsor {
+		float: right;
+		padding: 25px 0;
+	}
+	#header .categories {
+		clear: both;
+		list-style-type: none;
+		height: 40px;
+		border-bottom: 5px solid #003366;
+		border-top: 1px solid #DDDDDD;
+		overflow: hidden;
+	}
+		#header .categories li {
+			float: left;
+		}
+		#header .categories li a {
+			display: block;
+			padding: 13px;
+			color: #333333;
+			border-right: 1px solid #dddddd;
+			text-decoration: none;
+		}
+		#header .categories li a:hover {
+			background-color: #003366;
+			color: #ffffff;
+		}
